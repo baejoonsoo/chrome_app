@@ -1,7 +1,7 @@
-const title = document.querySelector("#title");
+const title = document.querySelector('#title');
 
 const handleTitleClick = () => {
-  console.log("title was clicked!!");
+  title.classList.toggle('clicked');
 };
 
-title.addEventListener("click", handleTitleClick);
+title.addEventListener('click', handleTitleClick);
