@@ -42,10 +42,30 @@ const quotes = [
   },
 ];
 
-const quote = document.querySelector('#quote span:first-child');
-const author = document.querySelector('#quote span:last-child');
+const quote = document.querySelector('#quote p:first-child');
+const author = document.querySelector('#quote p:last-child');
 
 const todayQuote = quotes[Math.floor(Math.random() * quotes.length)];
 
 quote.innerText = todayQuote.quote;
 author.innerText = todayQuote.author;
+
+const quoteScreen = document.querySelector('#quote');
+const fadeInBtn = document.querySelector('#fadeInBtn');
+const FADE_IN_KEY = 'fadeIn';
+const FADE_OUT_KEY = 'fadeOut';
+
+const onPadeIn = () => {
+  console.log('over');
+  quoteScreen.classList.remove(FADE_OUT_KEY);
+  quoteScreen.classList.add(FADE_IN_KEY);
+};
+
+const onPadeOut = () => {
+  console.log('out');
+  quoteScreen.classList.remove(FADE_IN_KEY);
+  quoteScreen.classList.add(FADE_OUT_KEY);
+};
+
+fadeInBtn.addEventListener('mouseover', onPadeIn);
+fadeInBtn.addEventListener('mouseout', onPadeOut);

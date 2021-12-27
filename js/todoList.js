@@ -31,8 +31,8 @@ const printToDo = (newToDo) => {
 
   button.addEventListener('click', delToDo);
 
-  li.appendChild(span);
   li.appendChild(button);
+  li.appendChild(span);
 
   toDoList.appendChild(li);
   console.log(newToDo);

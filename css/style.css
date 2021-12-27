@@ -1,14 +1,12 @@
 body {
   padding-top: 150px;
   display: grid;
+  justify-items: center;
+  overflow: hidden;
 }
 
 .clicked {
   color: tomato;
-}
-
-.hidden {
-  display: none;
 }
 
 .background-img {
@@ -24,27 +22,28 @@ body {
   color: white;
   font-weight: bold;
   font-size: 100px;
-  justify-self: center;
+  /* justify-self: center; */
   margin-bottom: 40px;
 }
 
 .todoList-input {
+  width: 250px;
   color: white;
   background-color: transparent;
   outline: none;
   border: none;
   border-bottom: white 2px solid;
-  font-size: 20pt;
+  font-size: 15pt;
 
   padding-bottom: 5pt;
+  font-weight: 500;
 
-  justify-self: center;
+  /* justify-self: center; */
+  text-align: center;
+
+  margin-top: 10pt;
 
   box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
-}
-
-#todo-form {
-  justify-self: center;
 }
 
 .userName {
@@ -53,4 +52,122 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   justify-self: center;
   margin: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+#login-form input {
+  width: 400px;
+  color: white;
+  background-color: transparent;
+  outline: none;
+  border: none;
+  font-size: 25pt;
+  border-bottom: white 2px solid;
+  text-align: center;
+}
+
+#fadeInBtn {
+  position: fixed;
+  bottom: 0px;
+  left: 0;
+  width: 100vw;
+  height: 50px;
+  /* background-color: red; */
+  z-index: 1;
+}
+
+#quote {
+  position: fixed;
+  bottom: -100px;
+  display: grid;
+
+  justify-items: center;
+  align-items: center;
+
+  color: white;
+  display: grid;
+  /* opacity: 0; */
+
+  /* transition-duration: 1s; */
+}
+.fadeIn {
+  transform: translateY(-100px);
+  transition-duration: 0.3s;
+}
+.fadeOut {
+  transform: translateY(100px);
+  transition-duration: 1s;
+}
+
+#quote div {
+  display: grid;
+  padding: 10px 50px;
+  background-color: rgba(0, 0, 0, 0.7);
+  margin-bottom: 10px;
+}
+
+#quote p:first-child {
+  font-size: 15px;
+  margin: 0;
+  font-weight: 500;
+}
+
+#quote p:last-child {
+  font-size: 13px;
+  justify-self: right;
+  font-weight: 500;
+  margin-bottom: 0;
+  margin-top: 5px;
+}
+
+#weather {
+  position: fixed;
+  top: 0;
+  right: 0;
+  margin: 20px 30px;
+}
+
+#weather span {
+  font-weight: 700;
+  font-size: 12pt;
+}
+
+#todo-list {
+  margin: 30px;
+  /* margin-left: -150px; */
+  padding: 0;
+  /* background-color: rebeccapurple; */
+  height: 270px;
+  overflow: scroll;
+  scrollbar-width: none; /* Firefox */
+}
+
+#todo-list::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Opera*/
+}
+
+#todo-list li {
+  display: flex;
+  justify-items: center;
+}
+
+#todo-list li button {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  margin-right: 5px;
+  margin-bottom: 20px;
+  font-size: 110%;
+}
+
+#todo-list li span {
+  color: white;
+  font-weight: 450;
+}
+
+.hidden {
+  display: none;
 }

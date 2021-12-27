@@ -7,15 +7,15 @@ const onGeoOk = (position) => {
   fetch(URL)
     .then((response) => response.json())
     .then((res) => {
-      const weather = document.querySelector('#weather span:first-child');
-      const city = document.querySelector('#weather span:last-child');
+      const weather = document.querySelector('#weather span');
 
-      city.innerText = res.name;
-      weather.innerText = `${res.weather[0].main} / ${res.main.temp}`;
+      // city.innerText = res.name;
+      weather.innerText = `${res.main.temp}°@${res.name}`;
     });
 };
 
 const onGeoError = () => {
   alert(`can't find you. No wheather for you.`);
 };
+
 navigator.geolocation.getCurrentPosition(onGeoOk, onGeoError);
