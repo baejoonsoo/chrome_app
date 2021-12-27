@@ -45,10 +45,12 @@ const quotes = [
 const quote = document.querySelector('#quote p:first-child');
 const author = document.querySelector('#quote p:last-child');
 
-const todayQuote = quotes[Math.floor(Math.random() * quotes.length)];
+const changeQuote = () => {
+  const todayQuote = quotes[Math.floor(Math.random() * quotes.length)];
 
-quote.innerText = todayQuote.quote;
-author.innerText = todayQuote.author;
+  quote.innerText = todayQuote.quote;
+  author.innerText = todayQuote.author;
+};
 
 const quoteScreen = document.querySelector('#quote');
 const fadeInBtn = document.querySelector('#fadeInBtn');
@@ -59,6 +61,7 @@ const onPadeIn = () => {
   console.log('over');
   quoteScreen.classList.remove(FADE_OUT_KEY);
   quoteScreen.classList.add(FADE_IN_KEY);
+  changeQuote();
 };
 
 const onPadeOut = () => {
