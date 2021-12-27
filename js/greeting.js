@@ -16,7 +16,7 @@ const onSubmitBtn = (event) => {
 
 const paintGreetings = () => {
   const userName = localStorage.getItem(USER_NAME_KEY);
-  greeting.innerText = `hello ${userName}!!`;
+  greeting.innerHTML = `Hello <b>${userName}</b>!!`;
   greeting.classList.remove(HIDDEN_CLASSNAME);
 };
 
