@@ -57,9 +57,14 @@ toDoForm.addEventListener('submit', toDoSubmit);
 
 const savedToDos = localStorage.getItem(TODOS_KEY);
 
-if (saveToDos) {
+if (savedToDos) {
+  console.log('dfsja');
+  console.log(savedToDos);
   const parsed = JSON.parse(savedToDos);
 
   toDos = parsed;
   parsed.forEach(printToDo);
+} else {
+  console.log('null');
+  localStorage.setItem(TODOS_KEY, '');
 }

@@ -8,7 +8,7 @@
     <title>wow</title>
   </head>
   <body>
-    <h2 id="clock">00 : 00 : 00</h2>
+    <h2 class="clock" id="clock">00 : 00 : 00</h2>
     <form class="hidden" id="login-form">
       <input
         required
@@ -18,12 +18,21 @@
       />
       <button>log in</button>
     </form>
-    <h1 id="greeting" class="hidden"></h1>
+    <p id="greeting" class="userName hidden"></p>
     <form id="todo-form">
-      <input type="text" placeholder="write To Do and press enter" required />
+      <input
+        class="todoList-input"
+        type="text"
+        placeholder="write To Do and press enter"
+        required
+      />
     </form>
     <ul id="todo-list"></ul>
     <div id="quote">
+      <span></span>
+      <span></span>
+    </div>
+    <div id="weather">
       <span></span>
       <span></span>
     </div>
