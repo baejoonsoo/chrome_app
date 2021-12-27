@@ -5,10 +5,6 @@ body {
   overflow: hidden;
 }
 
-.clicked {
-  color: tomato;
-}
-
 .background-img {
   width: 100vw;
   height: 100vh;
@@ -24,6 +20,7 @@ body {
   font-size: 100px;
   /* justify-self: center; */
   margin-bottom: 40px;
+  text-shadow: 2px 2px 2px grey;
 }
 
 .todoList-input {
@@ -38,12 +35,13 @@ body {
   padding-bottom: 5pt;
   font-weight: 500;
 
-  /* justify-self: center; */
+  text-shadow: 2px 2px 2px grey;
+
   text-align: center;
 
   margin-top: 10pt;
 
-  box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
+  box-shadow: 0px 2px 0px grey;
 }
 
 .userName {
@@ -67,6 +65,8 @@ ul {
   font-size: 25pt;
   border-bottom: white 2px solid;
   text-align: center;
+  text-shadow: 2px 2px 2px grey;
+  box-shadow: 0px 2px 0px grey;
 }
 
 #fadeInBtn {
