@@ -2,8 +2,4 @@
 
 ## serverless
 
-<a href='https://baejoonsoo.github.io/chrome_app'>
-  <h2>page</h2>
-</a>
-
-https://baejoonsoo.github.io/chrome_app
+## https://baejoonsoo.github.io/chrome_app
