@@ -2,4 +2,4 @@
 
 ## serverless
 
-## https://baejoonsoo.github.io/chrome_app
+## https://baejoonsoo.github.io/simple-web
