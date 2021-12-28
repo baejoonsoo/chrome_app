@@ -168,6 +168,7 @@ ul {
 #todo-list li span {
   color: white;
   font-weight: 450;
+  text-shadow: 2px 2px 2px grey;
 }
 
 .hidden {
