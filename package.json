@@ -1,0 +1,51 @@
+{
+  "dependencies": {
+    "@electron-forge/cli": "^6.0.0-beta.63",
+    "electron-squirrel-startup": "^1.0.0"
+  },
+  "scripts": {
+    "start": "electron-forge start",
+    "package": "electron-forge package",
+    "make": "electron-forge make"
+  },
+  "name": "simple-web",
+  "version": "1.0.0",
+  "main": "main.js",
+  "repository": "https://github.com/baejoonsoo/simple-web.git",
+  "author": "baejoonsoo <artns25@dsm.hs.kr>",
+  "license": "MIT",
+  "devDependencies": {
+    "@electron-forge/maker-deb": "^6.0.0-beta.63",
+    "@electron-forge/maker-rpm": "^6.0.0-beta.63",
+    "@electron-forge/maker-squirrel": "^6.0.0-beta.63",
+    "@electron-forge/maker-zip": "^6.0.0-beta.63",
+    "electron": "^19.0.2"
+  },
+  "config": {
+    "forge": {
+      "packagerConfig": {},
+      "makers": [
+        {
+          "name": "@electron-forge/maker-squirrel",
+          "config": {
+            "name": "simple_web"
+          }
+        },
+        {
+          "name": "@electron-forge/maker-zip",
+          "platforms": [
+            "darwin"
+          ]
+        },
+        {
+          "name": "@electron-forge/maker-deb",
+          "config": {}
+        },
+        {
+          "name": "@electron-forge/maker-rpm",
+          "config": {}
+        }
+      ]
+    }
+  }
+}

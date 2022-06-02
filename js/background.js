@@ -10,10 +10,14 @@ const images = [
   '8.jpg',
 ];
 
-const chosenImage = images[Math.floor(Math.random() * images.length)];
+const getBackground = () => {
+  const chosenImage = images[Math.floor(Math.random() * images.length)];
 
-const bgImg = document.createElement('img');
-bgImg.src = `img/${chosenImage}`;
-bgImg.className = 'background-img';
+  const bgImg = document.createElement('img');
+  bgImg.src = `img/${chosenImage}`;
+  bgImg.className = 'background-img';
 
-document.body.appendChild(bgImg);
+  document.body.appendChild(bgImg);
+};
+
+getBackground();
